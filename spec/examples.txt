@@ -1,4 +1,4 @@
 example_id                                     | status | run_time        |
 ---------------------------------------------- | ------ | --------------- |
-./spec/four_arithmetic_operations_spec.rb[1:1] | passed | 0.00007 seconds |
-./spec/hello_spec.rb[1:1]                      | passed | 0.00124 seconds |
+./spec/four_arithmetic_operations_spec.rb[1:1] | passed | 0.00104 seconds |
+./spec/hello_spec.rb[1:1]                      | passed | 0.00014 seconds |
