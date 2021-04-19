@@ -9,3 +9,5 @@ def fizz_buzz(num)
     num.to_s
   end
 end
+
+puts fizz_buzz(ARGV[0].to_i)
