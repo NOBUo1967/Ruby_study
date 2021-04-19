@@ -2,6 +2,6 @@ example_id                                       | status | run_time        |
 ------------------------------------------------ | ------ | --------------- |
 ./spec/four_arithmetic_operations_spec.rb[1:1:1] | passed | 0.00005 seconds |
 ./spec/four_arithmetic_operations_spec.rb[1:2:1] | passed | 0.00005 seconds |
-./spec/greet_test_spec.rb[1:1:1:1]               | passed | 0.00008 seconds |
-./spec/greet_test_spec.rb[1:1:2:1]               | passed | 0.00097 seconds |
-./spec/hello_spec.rb[1:1]                        | passed | 0.00005 seconds |
+./spec/greet_test_spec.rb[1:1:1:1]               | passed | 0.00006 seconds |
+./spec/greet_test_spec.rb[1:1:2:1]               | passed | 0.0001 seconds  |
+./spec/hello_spec.rb[1:1]                        | passed | 0.00156 seconds |
