@@ -9,4 +9,9 @@ RSpec.describe '四則演算' do
       expect(10 - 1).to eq 9
     end
   end
+  describe 'あまり' do
+    it '4 / 3 は あまり 1 になること' do
+      expect(4 % 3 ).to eq 1
+    end
+  end
 end
