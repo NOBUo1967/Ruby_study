@@ -13,5 +13,11 @@ RSpec.describe 'RGB_test' do
         expect(to_hex(255, 255, 255)).to eq '#ffffff'
       end
     end
+
+    context 'to_hex(4, 60, 120)の時' do
+      it '#043c78を返す' do
+        expect(to_hex(4, 60, 120)).to eq '#043c78'
+      end
+    end
   end
 end
