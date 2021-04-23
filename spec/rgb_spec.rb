@@ -33,5 +33,11 @@ RSpec.describe 'RGB_test' do
         expect(to_ints('#ffffff')).to eq [255, 255, 255]
       end
     end
+
+    context "to_ints('#043c78')の時" do
+      it '[4, 60, 120]を返す' do
+        expect(to_ints('#043c78')).to eq [4, 60, 120]
+      end
+    end
   end
 end
