@@ -8,11 +8,7 @@ def to_ints(hex)
   r = hex[1..2]
   g = hex[3..4]
   b = hex[5..6]
-  inst = []
-  [r, g, b].each do |color|
-    inst << color.hex
+  [r, g, b].map do |color|
+    color.hex
   end
-  inst
 end
-
-to_ints(ARGV[0])
