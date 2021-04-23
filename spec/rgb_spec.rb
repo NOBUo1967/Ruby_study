@@ -27,5 +27,11 @@ RSpec.describe 'RGB_test' do
         expect(to_ints('#000000')).to eq [0, 0, 0]
       end
     end
+
+    context "to_ints('#ffffff')の時" do
+      it '[255, 255, 255]を返す' do
+        expect(to_ints('#ffffff')).to eq [255, 255, 255]
+      end
+    end
   end
 end
