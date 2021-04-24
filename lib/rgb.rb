@@ -5,8 +5,7 @@ def to_hex(r, g, b)
 end
 
 def to_ints(hex)
-  r, g, b = hex.scan(/\w\w/)
-  [r, g, b].map do |color|
+  hex.scan(/\w\w/).map do |color|
     color.hex
   end
 end
