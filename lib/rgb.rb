@@ -7,7 +7,6 @@ def to_hex(r, g, b)
 end
 
 def to_ints(hex)
-  binding.pry
   hex.scan(/\w\w/).map(&:hex)
 end
 
