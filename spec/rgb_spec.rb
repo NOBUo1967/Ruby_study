@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 RSpec.describe 'RGB_test' do
-  # subject { to_hex(r, g, b) }
   describe 'test_to_hex' do
     context 'to_hex(0, 0, 0)の時' do
       it '#000000を返す' do
