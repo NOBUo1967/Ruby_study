@@ -21,23 +21,19 @@ RSpec.describe 'RGB_test' do
     end
   end
 
-  describe 'test_to_ints' do
-    context "to_ints('#000000')の時" do
-      it '[0, 0, 0]を返す' do
-        expect(to_ints('#000000')).to eq [0, 0, 0]
-      end
-    end
-
-    context "to_ints('#ffffff')の時" do
-      it '[255, 255, 255]を返す' do
-        expect(to_ints('#ffffff')).to eq [255, 255, 255]
-      end
-    end
-
-    context "to_ints('#043c78')の時" do
-      it '[4, 60, 120]を返す' do
-        expect(to_ints('#043c78')).to eq [4, 60, 120]
-      end
-    end
+  subject {to_ints(hex)}
+  context "to_ints('#000000')の時" do
+    let(:hex) { '#000000' }
+    it { is_expected.to eq [0, 0, 0] }
   end
+
+  context "to_ints('#ffffff')の時" do
+    let(:hex) { '#ffffff' }
+    it { is_expected.to eq [255, 255, 255] }
+  end
+
+  context "to_ints('#043c78')の時" do
+    let(:hex) { '#043c78' }
+    it{ is_expected.to eq [4, 60, 120] }
+  end  
 end
