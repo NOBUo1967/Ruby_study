@@ -46,6 +46,11 @@ case choose
       puts "#{team}を削除しました"
     end
 
+  when 'read'
+    baseball_team.each do |key, value|
+      puts "球団 : #{key}, 勝数 : #{value}"
+    end
+
 end #case文のend
 
 puts baseball_team
