@@ -5,11 +5,9 @@ baseball_team = {
 }
 
 puts 'あなたの行いたい動作を教えて下さい'
-puts "(create), (read), (update), (delete)"
+puts '(create), (read), (update), (delete)'
 
 choose = gets.chomp
-
-#create,read,update,deleteそれぞれの処理を条件分岐する。
 
 case choose
   when 'create'
@@ -51,6 +49,8 @@ case choose
       puts "球団 : #{key}, 勝数 : #{value}"
     end
 
-end #case文のend
+  else
+    '正しい機能を選択してください'
+end
 
 puts baseball_team
