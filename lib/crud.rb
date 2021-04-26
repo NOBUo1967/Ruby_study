@@ -23,6 +23,7 @@ case choose
     else
       puts 'すでに登録されています'
     end
+
   when 'update'
     puts '勝数を更新したい球団を選んでください'
     team = gets.chomp
@@ -34,6 +35,13 @@ case choose
       baseball_team[team.to_sym] = number_of_win.to_i
       puts "#{team}の勝数が#{number_of_win}に更新されました"
     end
+
+  when 'delete'
+    puts '削除したい球団を選んでください'
+    team = gets.chomp
+    baseball_team.delete(team.to_sym)
+    puts "#{team}を削除しました"
+
 end #case文のend
 
 puts baseball_team
