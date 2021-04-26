@@ -15,10 +15,14 @@ case choose
   when 'create'
     puts '追加したい球団を入力してください'
     team = gets.chomp
-    puts '勝数を入力してください'
-    number_of_win = gets.chomp
-    baseball_team[team.to_sym] = number_of_win.to_i
-    puts "#{team}と勝数の追加が完了しました"
+    if baseball_team[team.to_sym].nil?
+      puts '勝数を入力してください'
+      number_of_win = gets.chomp
+      baseball_team[team.to_sym] = number_of_win.to_i
+      puts "#{team}と勝数の追加が完了しました"
+    else
+      puts 'すでに登録されています'
+    end
 end #case文のend
 
 puts baseball_team
