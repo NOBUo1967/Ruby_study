@@ -5,13 +5,22 @@ begin
 
   puts '====================================='
   puts '実行したい操作を入力してください'
-  puts '(index), (create), (update), (delete)'
+  puts '(index), (read), (create), (update), (delete)'
   puts '====================================='
   choose = gets.chomp
 
   case choose
   when 'index'
     q = 'SELECT * FROM baseball_team'
+    res = conn.exec(q)
+    res.each do |r|
+      puts r
+    end
+
+  when 'read'
+    puts '詳細情報を確認したい球団名を入力してください'
+    team_name = gets.chomp
+    q = "SELECT * FROM baseball_team WHERE team_name = '#{team_name}'"
     res = conn.exec(q)
     res.each do |r|
       puts r
