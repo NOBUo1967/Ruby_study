@@ -5,7 +5,7 @@ begin
 
   puts '====================================='
   puts '実行したい操作を入力してください'
-  puts '(index), (create)'
+  puts '(index), (create), (delete)'
   puts '====================================='
   choose = gets.chomp
 
@@ -21,8 +21,15 @@ begin
     puts '追加したい球団を入力してください'
     team_name = gets.chomp
     q = "INSERT INTO baseball_team (team_name) VALUES('#{team_name}')"
-    res = conn.exec(q)
+    conn.exec(q)
     puts '登録に成功しました'
+
+  when 'delete'
+    puts '削除したい球団の球団名を入力してください'
+    team_name = gets.chomp
+    q = "DELETE FROM baseball_team WHERE team_name = '#{team_name}'"
+    conn.exec(q)
+    puts '削除に成功しました'
   end
 rescue => ex
   puts(ex.class, ex.message)
