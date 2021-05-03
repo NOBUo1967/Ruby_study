@@ -15,13 +15,15 @@ a = []
 
 # 配列から特定の条件の値を取り出して配列を作成する。
 # 3の倍数でないものを削除
-a3 = a.reject { |i| i % 3 != 0 }
-puts a3
+# a3 = a.reject { |i| i % 3 != 0 }
+# puts a3
 # 3の倍数を抽出
-a4 = a.select { |i| i % 3 == 0 }
-puts a4
+# a4 = a.select { |i| i % 3 == 0 }
+# puts a4
 # reject!で破壊的に変更する
-a.reject! { |i| i % 3 != 0 }
+# a.reject! { |i| i % 3 != 0 }
 # select!も破壊的変更
-a.select! { |i| i % 3 == 0 }
-puts a
+# a.select! { |i| i % 3 == 0 }
+
+# 配列の並び替え
+a.reverse
