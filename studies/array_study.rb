@@ -26,4 +26,10 @@ a = []
 # a.select! { |i| i % 3 == 0 }
 
 # 配列の並び替え
-a.reverse
+# a.reverse
+
+# 要素の合計
+# a.sum
+result = 0
+a.each { |i| result += i }
+puts result
