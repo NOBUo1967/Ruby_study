@@ -9,3 +9,4 @@ gem "rake"
 gem "pry-byebug"
 gem "pry"
 gem "pg"
+gem 'rack'
