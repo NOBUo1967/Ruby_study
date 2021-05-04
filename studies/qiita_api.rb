@@ -23,5 +23,7 @@ res = Net::HTTP.get(uri)
 # JSON JSONを扱うためのモジュール
 # Net::HTTP.getでえられたresはStrigのためRubyで扱いやすくするためにparseする。
 res = JSON.parse(res)
-puts res
 
+res.each do |item| 
+  puts "#{item['title']} by #{item['user']['name']}"
+end
