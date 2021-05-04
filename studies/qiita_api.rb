@@ -2,7 +2,13 @@ require 'uri'
 require 'net/http'
 require 'json'
 
-url = "https://qiita.com/api/v2/items"
+puts '=============================='
+puts '検索したい単語を入力してください'
+puts '=============================='
+word = gets.chomp
+
+url = "https://qiita.com/api/v2/items?query=#{word}"
+
 
 
 # URIモジュール
