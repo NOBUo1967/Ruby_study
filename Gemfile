@@ -11,3 +11,4 @@ gem "pry"
 gem "pg"
 gem 'rack'
 gem 'nokogiri'
+gem 'mysql2'
