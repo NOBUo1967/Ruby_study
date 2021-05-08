@@ -12,3 +12,4 @@ gem "pg"
 gem 'rack'
 gem 'nokogiri'
 gem 'mysql2'
+gem 'dotenv'
