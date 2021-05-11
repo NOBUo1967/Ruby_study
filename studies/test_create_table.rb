@@ -6,7 +6,7 @@ begin
   conn = PG.connect('localhost', 5432, '', '', 'testdb', 'SHIN', '')
   conn.exec(<<-SQL)
     CREATE TABLE IF NOT EXISTS test_table
-    (id int, first_name text, famiry_name text)
+    (id int, first_name text, family_name text)
     SQL
 rescue => ex
   puts(ex.class, ex.message)
